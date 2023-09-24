@@ -278,6 +278,10 @@ button:hover {
         flex-wrap: wrap;
         gap: 2rem;
     }
+
+    ul li {
+        padding: 0.2rem 0.5rem;
+    }
 }
 
 @media (max-width: 520px) {
