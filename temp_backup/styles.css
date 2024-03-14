@@ -1,321 +1,265 @@
-body {
-    background-color: #0f1624;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-a,
-p {
-    text-decoration: none;
-    color: #b7b8b8;
-}
-
-a:hover {
-    color: #ba520a;
-}
-
-ul {
-    margin: 0;
-}
-
-ul li {
-    list-style: none;
-    padding: 0.5rem 1rem;
-}
-
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 button {
-    padding: 0.6rem;
-    width: 10rem;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    background: linear-gradient(90deg, #8b62d5, #28a0c9);
-    color: #fdfdfd;
-    font-size: large;
-    font-weight: 600;
+  padding: 0.6rem;
+  width: 10rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  background: linear-gradient(90deg, #8b62d5, #28a0c9);
+  color: #fdfdfd;
+  font-size: large;
+  font-weight: 600;
 }
 
 button:hover {
-    opacity: .85;
-}
-
-.nav-container>* {
-    margin-top: 1rem;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #0f1624;
-    z-index: 9999;
-    box-shadow: -15px 0.1px 9px 0.12px #f0690b;
-}
-
-.nav-links ul {
-    display: flex;
-}
-
-.social-media-icons>* {
-    padding: 0 0.8rem;
-}
-
-.social-media-icons img {
-    width: 28px;
-    height: 28px;
-    cursor: pointer;
+  opacity: 0.85;
 }
 
 .banner-main-content {
-    width: 60%;
-    z-index: 99;
+  width: 60%;
+  z-index: 99;
 }
 
 .banner-header {
-    color: #fdfdfd;
-    margin-left: 5%;
-    margin-top: 5rem;
-    display: flex;
+  color: #fdfdfd;
+  margin-left: 5%;
+  margin-top: 5rem;
+  display: flex;
 }
 
 .banner-bg-images {
-    position: absolute;
-    right: 0;
-    z-index: 1;
+  position: absolute;
+  right: 0;
+  z-index: 1;
 }
 
 .banner-header .banner-main-content .banner-text {
-    margin-left: 8%;
-    color: #a3a4a7;
+  margin-left: 8%;
+  color: #a3a4a7;
 }
 
 .banner-header .banner-main-content .banner-btn {
-    margin-left: 11%;
+  margin-left: 11%;
 }
 
 .projects-cards,
 .technologies-tab,
 .skills-fx,
 .about-me {
-    width: 85%;
-    margin: auto;
+  width: 85%;
+  margin: auto;
 }
 
 .section-heading {
-    text-align: center;
-    color: #fdfdfd;
-    margin: 3rem;
-    font-size: 3.2rem;
+  text-align: center;
+  color: #fdfdfd;
+  margin: 3rem;
+  font-size: 3.2rem;
 }
 
 .project-container {
-    border: 2px solid #505685;
-    padding: 0.8rem;
-    border-top-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
+  border: 2px solid #505685;
+  padding: 0.8rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
 }
 
 .project-container img:hover {
-    transform: scale(1.01);
-    transition: ease-out 250ms;
-    /* Increase the scale factor for zooming in */
+  transform: scale(1.01);
+  transition: ease-out 250ms;
+  /* Increase the scale factor for zooming in */
 }
 
 .main-project-container {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 4rem;
-    color: #fdfdfd;
-    z-index: 8888;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 4rem;
+  color: #fdfdfd;
+  z-index: 8888;
 }
 
 .project-container .project-number {
-    text-align: center;
+  text-align: center;
 }
 
 .project-number h2 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .project-number .ln-gradient-border {
-    background: linear-gradient(10deg, #9167de, #6380d6);
-    background-color: #fdfdfd;
-    height: 0.1rem;
-    width: 80%;
-    margin: auto;
+  background: linear-gradient(10deg, #9167de, #6380d6);
+  background-color: #fdfdfd;
+  height: 0.1rem;
+  width: 80%;
+  margin: auto;
 }
 
 .technologies-progress {
-    margin-bottom: 1.3rem;
+  margin-bottom: 1.3rem;
 }
 
 .technologies-progress .technology-name {
-    display: flex;
-    justify-content: space-between;
-    color: #fdfdfd;
-    text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  color: #fdfdfd;
+  text-transform: capitalize;
 }
 
-.technology-name>* {
-    margin: 0.2rem;
+.technology-name > * {
+  margin: 0.2rem;
 }
 
 .progress-bar-wrap,
 .progress-bar {
-    height: 2rem;
-    border-radius: 1rem;
+  height: 2rem;
+  border-radius: 1rem;
 }
 
 .technologies-progress .progress-bar-wrap {
-    background-color: #162950;
+  background-color: #162950;
 }
 
 .progress-bar-wrap .progress-bar {
-    width: 90%;
-    background: linear-gradient(90deg, #8e60d5, #2c9eca);
+  width: 90%;
+  background: linear-gradient(90deg, #8e60d5, #2c9eca);
 }
 
 .progress-bar-wrap .css-bar {
-    width: 85%;
+  width: 85%;
 }
 
 .progress-bar-wrap .js-bar {
-    width: 87%;
+  width: 87%;
 }
 
 .progress-bar-wrap .figma-bar {
-    width: 70%;
+  width: 70%;
 }
 
 .progress-bar-wrap .react-bar {
-    width: 20%;
+  width: 20%;
 }
 
 .additional-skills .skills-fx ul li {
-    list-style-type: disc;
-    color: #b7b8b8;
-    padding: 0.5rem;
+  list-style-type: disc;
+  color: #b7b8b8;
+  padding: 0.5rem;
 }
 
 .additional-skills .skills-fx {
-    display: flex;
-    gap: 3rem;
+  display: flex;
+  gap: 3rem;
 }
 
 .about-me h3 {
-    color: #fff;
+  color: #fff;
 }
 
 .about-main {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .about-me .align-center {
-    text-align: center;
+  text-align: center;
 }
 
 .contact-links {
-    display: flex;
-    color: #e4e5e6;
-    justify-content: space-between;
-    margin: 2rem;
+  display: flex;
+  color: #e4e5e6;
+  justify-content: space-between;
+  margin: 2rem;
 }
 
 .contact-links h3 {
-    margin: 0.2rem;
-    color: #fff;
-    font-size: 1.7rem;
+  margin: 0.2rem;
+  color: #fff;
+  font-size: 1.7rem;
 }
 
 @media (max-width: 740px) {
+  .projects-cards,
+  .technologies-tab,
+  .skills-fx,
+  .about-me {
+    width: 90%;
+    margin: auto;
+  }
 
-    .projects-cards,
-    .technologies-tab,
-    .skills-fx,
-    .about-me {
-        width: 90%;
-        margin: auto;
-    }
-
-    .main-project-container {
-        gap: 2rem;
-    }
+  .main-project-container {
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 685px) {
-    .skills-fx {
-        flex-wrap: wrap;
-    }
+  .skills-fx {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 600px) {
-
-    .projects-cards,
-    .technologies-tab,
-    .skills-fx,
-    .about-me {
-        width: 95%;
-        margin: auto;
-    }
+  .projects-cards,
+  .technologies-tab,
+  .skills-fx,
+  .about-me {
+    width: 95%;
+    margin: auto;
+  }
 }
 
 @media (max-width: 650px) {
-    .about-main {
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
+  .about-main {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 550px) {
-    .contact-links {
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
+  .contact-links {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 
-    ul li {
-        padding: 0.2rem 0.5rem;
-    }
+  ul li {
+    padding: 0.2rem 0.5rem;
+  }
 }
 
 @media (max-width: 520px) {
-    .main-project-container {
-        grid-template-columns: auto;
-    }
+  .main-project-container {
+    grid-template-columns: auto;
+  }
 }
 
 @media (max-width: 510px) {
-    .nav-left-icons {
-        display: none;
-    }
+  .nav-left-icons {
+    display: none;
+  }
 
-    .nav-links {
-        margin: 1rem;
-    }
+  .nav-links {
+    margin: 1rem;
+  }
 }
 
 @media (max-width: 390px) {
-    .nav-links {
-        margin: 0.5rem;
-    }
+  .nav-links {
+    margin: 0.5rem;
+  }
 }
 
 @media (max-width: 525px) {
-    .banner-bg-images img {
-        display: none;
-    }
+  .banner-bg-images img {
+    display: none;
+  }
 
-    .banner-main-content {
-        background: url(/Images/Group\ 2.svg);
-    }
+  .banner-main-content {
+    background: url(/Images/Group\ 2.svg);
+  }
 
-    .section-heading {
-        z-index: 2;
-    }
+  .section-heading {
+    z-index: 2;
+  }
 }
