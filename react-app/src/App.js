@@ -1,13 +1,16 @@
 import "./App.css";
 import { Navigation } from "./Components/NavigationMenu/Navigation";
 import { BannerHeader } from "./Components/HeaderSection/BannerHeader";
+import { Project } from "./Components/Projects/Project";
+import { Fragment } from "react";
 
 function App() {
   return (
-    <div className="App">
+    <Fragment>
       <Navigation />
       <BannerHeader />
-    </div>
+      <Project />
+    </Fragment>
   );
 }
 
