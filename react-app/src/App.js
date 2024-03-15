@@ -2,6 +2,7 @@ import "./App.css";
 import { Navigation } from "./Components/NavigationMenu/Navigation";
 import { BannerHeader } from "./Components/HeaderSection/BannerHeader";
 import { Project } from "./Components/Projects/Project";
+import { TechnologiesSection } from "./Components/Technologies/TechnologiesSection";
 import { Fragment } from "react";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Navigation />
       <BannerHeader />
       <Project />
+      <TechnologiesSection />
     </Fragment>
   );
 }
