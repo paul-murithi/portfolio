@@ -1,7 +1,5 @@
 .technologiesTab {
   padding: 0.5rem 0;
-  width: 80%;
-  margin: auto;
 }
 
 .sectionHeading {
@@ -14,6 +12,8 @@
 .technologiesProgress {
   display: flex;
   flex-direction: column;
+  width: 80%;
+  margin: auto;
 }
 
 .technologiesProgressItem {
@@ -35,5 +35,5 @@
 .progressBar {
   background: linear-gradient(90deg, #8e60d5, #2c9eca);
   height: 20px;
-  transition: width 0.5s ease;
+  transition: width 3s ease;
 }

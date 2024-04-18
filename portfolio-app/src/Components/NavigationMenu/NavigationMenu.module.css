@@ -37,6 +37,8 @@ ul li {
   background-color: #0f1624;
   z-index: 9999;
   box-shadow: -15px 0.1px 9px 0.12px #f0690b;
+  height: 8%;
+  align-items: center;
 }
 
 .navLinks ul {
@@ -51,4 +53,10 @@ ul li {
   width: 28px;
   height: 28px;
   cursor: pointer;
+}
+
+@media (max-width: 473px) {
+  .navLinks {
+    display: none;
+  }
 }

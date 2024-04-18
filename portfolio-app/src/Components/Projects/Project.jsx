@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./Project.module.css";
 import { ProjectCard } from "./ProjectCard";
-import transitease from "../../assets/transitEase project.png";
-import Airbnb from "../../assets/Airbnb clone v2.png";
-import ecommerce from "../../assets/e commerce.png";
-import fms from "../../assets/farm management system.png";
+import transitease from "../../utilities/transitEase project.png";
+import Airbnb from "../../utilities/Airbnb clone v2.png";
+import ecommerce from "../../utilities/e commerce.png";
+import fms from "../../utilities/farm management system.png";
 
 export const Project = () => {
   return (
     <section className={styles.projectsCards}>
-      <h1 className={styles.sectionHeading}>Projects</h1>
+      <h2 className={styles.sectionHeading}>Projects</h2>
       <div className={styles.mainProjectContainer}>
         <ProjectCard
           imageSrc={transitease}

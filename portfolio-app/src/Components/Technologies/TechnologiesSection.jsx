@@ -44,7 +44,7 @@ export const TechnologiesSection = () => {
 
   return (
     <section ref={technologiesRef} className={styles.technologiesTab}>
-      <h1 className={styles.sectionHeading}>Technologies</h1>
+      <h2 className={styles.sectionHeading}>Technologies</h2>
       <div className={styles.technologiesProgress}>
         {Object.entries(fillLevels).map(([technology, fillLevel]) => (
           <div className={styles.technologiesProgressItem} key={technology}>

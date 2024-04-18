@@ -16,7 +16,7 @@ export const ProjectCard = ({
     <div className={styles.projectContainer}>
       <Image src={imageSrc} alt={alt} />
       <div className={styles.projectNumber}>
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <div className={styles.lnGradientBorder}></div>
       </div>
       <p className={styles.projectDetails}>{details}</p>

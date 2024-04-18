@@ -2,9 +2,9 @@ import React from "react";
 import { Image } from "../Image/Image";
 import { Header } from "./Header";
 import styles from "./Header.module.css";
-import group1 from "../../assets/Group1.svg";
-import group2 from "../../assets/Group2.svg";
-import group4 from "../../assets/Group4.svg";
+import group1 from "../../utilities/Group1.svg";
+import group2 from "../../utilities/Group2.svg";
+import group4 from "../../utilities/Group4.svg";
 
 export const BannerHeader = () => {
   return (
