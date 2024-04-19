@@ -1,0 +1,39 @@
+.technologiesTab {
+  padding: 0.5rem 0;
+}
+
+.sectionHeading {
+  font-size: 3.2rem;
+  margin: 3rem;
+  color: #fdfdfd;
+  text-align: center;
+}
+
+.technologiesProgress {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.technologiesProgressItem {
+  margin-bottom: 20px;
+}
+
+.technologyName {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.progressBarWrap {
+  background-color: #1b3464;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progressBar {
+  background: linear-gradient(90deg, #8e60d5, #2c9eca);
+  height: 20px;
+  transition: width 3s ease;
+}
