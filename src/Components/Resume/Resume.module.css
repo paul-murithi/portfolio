@@ -1,0 +1,29 @@
+.link {
+  padding: 1rem;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 1000;
+  background: linear-gradient(90deg, #8b62d5, #28a0c9);
+  animation: bulge 2s infinite;
+}
+
+@keyframes bulge {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.link:hover {
+  animation: none;
+  color: #fff;
+}

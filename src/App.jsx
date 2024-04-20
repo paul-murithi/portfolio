@@ -7,6 +7,7 @@ import { Navigation } from "./Components/NavigationMenu/Navigation";
 import { Project } from "./Components/Projects/Project";
 import { Skills } from "./Components/Skills/Skills";
 import { TechnologiesSection } from "./Components/Technologies/TechnologiesSection";
+import { Resume } from "./Components/Resume/Resume";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Skills />
       <Footer />
+      <Resume />
     </>
   );
 }
