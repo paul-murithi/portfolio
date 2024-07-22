@@ -10,7 +10,7 @@ export const ProjectCard = ({
   details,
   stack,
   buttonText,
-  onClick,
+  link,
 }) => {
   return (
     <div className={styles.projectContainer}>
@@ -24,12 +24,15 @@ export const ProjectCard = ({
         <strong>{stack}</strong>
       </div>
 
-      <Button
-        buttonText={buttonText}
+      <a
+        href={link}
         className="openProject"
         title="open project"
-        type="button"
-      />
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {buttonText}
+      </a>
     </div>
   );
 };
