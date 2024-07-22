@@ -18,6 +18,7 @@ export const Project = () => {
           details="A online ticket booking platform that simplifies travel arrangements and enhances the overall journey experience. With a user-friendly interface and comprehensive range of services, connecting travelers to a vast network of bus routes, making it effortless to search, book, and manage tickets."
           stack="Tech stack: HTML, CSS, Javascript, Java spring boot, MySql."
           title="TransitEase bus booking system"
+          link="https://github.com/paul-murithi/TransitEase-Bus-Travel-Website"
         />
         <ProjectCard
           imageSrc={Airbnb}
@@ -30,6 +31,7 @@ export const Project = () => {
           and deployment scripts for hosting."
           stack="Tech stack: Python,HTML,CSS, Shell"
           title="AirBnB clone"
+          link="https://github.com/paul-murithi/AirBnB_clone"
         />
         <ProjectCard
           imageSrc={ecommerce}
@@ -39,6 +41,7 @@ export const Project = () => {
           to order goods, track item and track delivery information"
           stack="Tech stack: HTML,CSS, Javascript, nodejs, Mongodb"
           title="E-commerce clone"
+          link="https://github.com/paul-murithi/Amazon-Ecommerce-clone"
         />
         <ProjectCard
           imageSrc={fms}
@@ -49,6 +52,7 @@ export const Project = () => {
           monitor yields, livestock health, and set reminders for farm tasks."
           stack="Tech stack: HTML,CSS, Javascript, Laravel, SQL"
           title="Farm management system"
+          link="https://github.com/paul-murithi/Farm_managemnt_system"
         />
       </div>
     </section>
