@@ -50,6 +50,23 @@
   margin: auto;
 }
 
+a.openProject {
+  padding: 0.6rem;
+  width: 10rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  background: linear-gradient(90deg, #8b62d5, #28a0c9);
+  color: #fdfdfd;
+  font-size: large;
+  font-weight: 600;
+  margin: 5%;
+}
+
+a.openProject:hover {
+  opacity: 0.85;
+}
+
 @media (max-width: 740px) {
   .mainProjectContainer {
     grid-template-columns: repeat(1, auto);

@@ -26,7 +26,7 @@ export const ProjectCard = ({
 
       <a
         href={link}
-        className="openProject"
+        className={styles.openProject}
         title="open project"
         target="_blank"
         rel="noopener noreferrer"
