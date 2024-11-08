@@ -1,0 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.sectionHeading {
+  text-align: center;
+  color: #fdfdfd;
+  margin: 3rem;
+  font-size: 3.2rem;
+}

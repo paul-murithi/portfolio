@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Project.module.css";
 import { ProjectCard } from "./ProjectCard";
+import TitleHeading from "../TitleHeading/TitleHeading";
 import transitease from "../../assets/transitEase project.png";
 import Airbnb from "../../assets/Airbnb clone v2.png";
 import ecommerce from "../../assets/e commerce.png";
@@ -9,7 +10,7 @@ import fms from "../../assets/farm management system.png";
 export const Project = () => {
   return (
     <section className={styles.projectsCards}>
-      <h2 className={styles.sectionHeading}>Projects</h2>
+      <TitleHeading headingName={"Projects"} />
       <div className={styles.mainProjectContainer}>
         <ProjectCard
           imageSrc={transitease}

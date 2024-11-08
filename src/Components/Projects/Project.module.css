@@ -3,7 +3,8 @@
   grid-template-columns: repeat(2, auto);
   gap: 4rem;
   color: #fdfdfd;
-  z-index: 8888;
+  position: relative;
+  z-index: 70;
 }
 
 .projectContainer {
@@ -36,13 +37,6 @@
   height: 0.1rem;
   width: 80%;
   margin: auto;
-}
-
-.sectionHeading {
-  text-align: center;
-  color: #fdfdfd;
-  margin: 3rem;
-  font-size: 3.2rem;
 }
 
 .projectsCards {
