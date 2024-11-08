@@ -8,6 +8,7 @@ import { Project } from "./Components/Projects/Project";
 import { Skills } from "./Components/Skills/Skills";
 import { TechnologiesSection } from "./Components/Technologies/TechnologiesSection";
 import { Resume } from "./Components/Resume/Resume";
+import "./App.css";
 
 function App() {
   return (

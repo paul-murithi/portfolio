@@ -24,9 +24,3 @@
   background-clip: text;
   color: transparent;
 }
-
-@media (max-width: 525px) {
-  .bannerBgImages img {
-    display: none;
-  }
-}

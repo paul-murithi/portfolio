@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Image } from "../Image/Image";
 import { Header } from "./Header";
 import styles from "./Header.module.css";
@@ -9,27 +10,66 @@ import group4 from "../../assets/Group4.svg";
 export const BannerHeader = () => {
   return (
     <section>
-      <div className={styles.bannerHeader}>
+      <motion.div
+        className={styles.bannerHeader}
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0, scale: 0.9 },
+          visible: {
+            opacity: 1,
+            scale: 1,
+            transition: { duration: 0.8, ease: "easeOut" },
+          },
+        }}
+      >
         <div className={styles.bannerMainContent}>
           <Header
-            title="Welcome to My Website!"
-            text="My name is Kirera Paul Murithi, and I am a passionate web developer dedicated to designing and building the best web and software applications. I also delve into the realms of IT support and computer networking"
+            title="Welcome to My Website"
+            text="I'm Kirera Paul Murithi, a dedicated web developer driven to craft high-quality software applications."
           />
           <Header
             title="About Me:"
-            text="I thrive on creating innovative solutions that push the boundaries of web and software development. With a keen interest in IT support and computer networking, I bring a holistic approach to every project I undertake."
+            text="With a passion for software development, I strive to create efficient, innovative solutions that elevate the digital experience."
           />
           <Header
-            title="Let's Build Something Amazing:"
-            text="Whether it's designing captivating user interfaces or architecting robust backend systems, I'm committed to delivering excellence. Join me on this journey as we turn ideas into reality and transform the digital landscape together."
+            title="Let's Build Together:"
+            text="From engaging user interfaces to scalable backend systems, I'm here to bring ideas to life through powerful, well-designed software."
           />
         </div>
-        <div className={styles.bannerBgImages}>
-          <Image src={group1} alt="Eclipse 1" />
-          <Image src={group4} alt="Eclipse 4" />
-          <Image src={group2} alt="Eclipse 2" />
-        </div>
-      </div>
+
+        <motion.div
+          className={styles.bannerBgImages}
+          initial={{ y: 20, opacity: 0 }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            transition: { delay: 0.5, duration: 1.2 },
+          }}
+        >
+          <motion.div
+            initial={{ y: 0 }}
+            animate={{ y: [0, 10, 0] }}
+            transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+          >
+            <Image src={group1} alt="Eclipse 1" />
+          </motion.div>
+          <motion.div
+            initial={{ y: 0 }}
+            animate={{ y: [0, -10, 0] }}
+            transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+          >
+            <Image src={group4} alt="Eclipse 4" />
+          </motion.div>
+          <motion.div
+            initial={{ y: 0 }}
+            animate={{ y: [0, 5, 0] }}
+            transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+          >
+            <Image src={group2} alt="Eclipse 2" />
+          </motion.div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

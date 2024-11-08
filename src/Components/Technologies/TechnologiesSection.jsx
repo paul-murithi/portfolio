@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import TitleHeading from "../TitleHeading/TitleHeading";
 import styles from "./TechnologiesSection.module.css";
 
 export const TechnologiesSection = () => {
@@ -44,7 +45,7 @@ export const TechnologiesSection = () => {
 
   return (
     <section ref={technologiesRef} className={styles.technologiesTab}>
-      <h2 className={styles.sectionHeading}>Technologies</h2>
+      <TitleHeading headingName={"Technologies"} />
       <div className={styles.technologiesProgress}>
         {Object.entries(fillLevels).map(([technology, fillLevel]) => (
           <div className={styles.technologiesProgressItem} key={technology}>

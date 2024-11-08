@@ -1,0 +1,7 @@
+.sectionHeading {
+  text-align: center;
+  color: #fdfdfd;
+  font-size: 3.2rem;
+  position: relative;
+  z-index: 60;
+}
