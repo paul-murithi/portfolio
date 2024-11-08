@@ -40,7 +40,7 @@ export const Project = () => {
           buttonText="Look it up"
           details="A clone of the popular e-commerce website Amazon, which allows users
           to order goods, track item and track delivery information"
-          stack="Tech stack: HTML,CSS, Javascript, nodejs, Mongodb"
+          stack="Tech stack: HTML,CSS, React, MySQL, SpringBoot"
           title="E-commerce clone"
           link="https://github.com/paul-murithi/Amazon-Ecommerce-clone"
         />
