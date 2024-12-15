@@ -44,7 +44,11 @@ export const TechnologiesSection = () => {
   }, []);
 
   return (
-    <section ref={technologiesRef} className={styles.technologiesTab}>
+    <section
+      ref={technologiesRef}
+      className={styles.technologiesTab}
+      id="technologies"
+    >
       <TitleHeading headingName={"Technologies"} />
       <div className={styles.technologiesProgress}>
         {Object.entries(fillLevels).map(([technology, fillLevel]) => (

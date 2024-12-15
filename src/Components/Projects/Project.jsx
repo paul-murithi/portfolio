@@ -9,7 +9,7 @@ import fms from "../../assets/farm management system.png";
 
 export const Project = () => {
   return (
-    <section className={styles.projectsCards}>
+    <section className={styles.projectsCards} id="projects">
       <TitleHeading headingName={"Projects"} />
       <div className={styles.mainProjectContainer}>
         <ProjectCard

@@ -15,12 +15,20 @@
 
 .bannerBgImages {
   position: absolute;
-  right: 0;
+  right: 5%;
   z-index: 1;
+  display: flex;
+  top: 15%;
 }
 .gradientText {
   background: #ba520a;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+@media (max-width: 500px) {
+  .bannerBgImages {
+    display: block;
+  }
 }
