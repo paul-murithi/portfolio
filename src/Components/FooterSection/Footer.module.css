@@ -1,24 +1,28 @@
-.contactLinks {
-  display: flex;
+/* General Footer Styling */
+.footer {
+  padding: 2rem;
+  background-color: #121212;
   color: #e4e5e6;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  margin: 2rem;
-  flex-wrap: wrap;
-  gap: 1rem;
 }
 
-.contactLinks h3 {
-  margin: 0.2rem;
-  color: #fff;
-  font-size: 1.7rem;
-}
+/* Section Heading */
 .sectionHeading {
   text-align: center;
   color: #fdfdfd;
   margin: 3rem;
   font-size: 3.2rem;
+}
+
+.additionalLinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h4.callLink {
+  margin: 0.2rem;
+  color: #fff;
+  /* font-size: 1.7rem; */
 }
 
 .socialMediaIcons > * {
