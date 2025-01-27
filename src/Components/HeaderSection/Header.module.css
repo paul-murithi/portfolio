@@ -27,6 +27,10 @@
   color: transparent;
 }
 
+.main-header {
+  color: red;
+}
+
 @media (max-width: 500px) {
   .bannerBgImages {
     display: block;

@@ -24,17 +24,23 @@ export const BannerHeader = () => {
         }}
       >
         <div className={styles.bannerMainContent}>
-          <Header
-            title="Welcome to My Website"
-            text="I'm Kirera Paul Murithi, a dedicated web developer driven to craft high-quality software applications."
-          />
+          <div>
+            <h1>
+              Welcome to My{" "}
+              <span className={`${styles.gradientText}`}>Website</span>
+            </h1>
+            <p className={styles.bannerText}>
+              I'm Kirera Paul Murithi, a passionate Software Developer dedicated
+              to crafting high-quality software solutions.
+            </p>
+          </div>
           <Header
             title="About Me:"
-            text="With a passion for software development, I strive to create efficient, innovative solutions that elevate the digital experience."
+            text="With a deep passion for software development, I focus on creating efficient, innovative solutions that enhance the digital experience."
           />
           <Header
-            title="Let's Build Together:"
-            text="From engaging user interfaces to scalable backend systems, I'm here to bring ideas to life through powerful, well-designed software."
+            title="Let’s Build Together:"
+            text="Whether it’s creating engaging user interfaces or building scalable backend systems, I’m here to bring your ideas to life with powerful, well-designed software."
           />
         </div>
 
