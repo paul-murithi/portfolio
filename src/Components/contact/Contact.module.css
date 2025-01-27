@@ -1,64 +1,116 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .contactForm {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  margin: 2rem auto;
-  max-width: 500px;
-}
-
-.contactForm input,
-.contactForm textarea {
+  align-items: flex-start;
+  max-width: 100%;
   width: 100%;
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-
-  background-color: transparent;
-  color: #e4e5e6;
-  font-size: 1rem;
-}
-
-.contactForm input:focus,
-.contactForm textarea:focus {
-  outline: none;
+  margin: 0 auto;
+  padding: 2rem;
   border: 2px solid #505685;
-}
-
-.contactForm input:invalid {
-  border: 1px solid red;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
 .formLabel {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
   color: #fff;
-  align-self: flex-start;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
 }
 
-.submitButton {
-  padding: 1rem 2rem;
-  background-color: #00bcd4;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  margin-bottom: 1.5rem;
+  transition: border 0.3s ease, background-color 0.3s ease;
+  outline: none;
 }
 
-.submitButton:disabled {
-  background-color: #555;
-  cursor: not-allowed;
-}
-
-.submitButton:hover:not(:disabled) {
-  background-color: #0199a4;
+.input:focus {
+  border: 2px solid #505685;
+  background-color: #fff;
 }
 
 .validationError {
-  color: #ff6b6b;
-  font-size: 0.9rem;
-  margin-top: -1rem;
+  color: #e53935;
+  font-size: 0.875rem;
   margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.submitButton {
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #8b62d5, #28a0c9);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #3f4db8;
+  transform: translateY(-2px);
+}
+
+.submitButton:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .contactForm {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .input,
+  .submitButton {
+    font-size: 0.95rem;
+  }
+
+  .formLabel {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactForm {
+    padding: 1rem;
+    width: 95%;
+  }
+
+  .input,
+  .submitButton {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 362px) {
+  .contactForm {
+    padding: 0.5rem;
+  }
+
+  .input,
+  .submitButton {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .formLabel {
+    font-size: 0.8rem;
+  }
 }
